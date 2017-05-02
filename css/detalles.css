@@ -1,0 +1,39 @@
+.silla {
+  width: 400px;
+  height: 400px;
+}
+.nombre {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.subtitulo {
+  font-size: 20px;
+}
+.thumbgde {
+  width: 150px;
+  height: 150px;
+}
+.thumbch {
+  width: 75px;
+  height: 75px;
+}
+.thumbs {
+  padding-top: 2%;
+}
+.botonFavoritos {
+  background-color: #F3954D;
+  color: white;
+  border: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 70%;
+
+}
+.recientes {
+  width: 175px;
+  height: 175px;
+  margin-right: 20px;
+}

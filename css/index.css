@@ -1,0 +1,192 @@
+.fondo {
+    background-color: #F3954D;
+    padding: 10px;
+}
+.box {
+    background-color: white;
+    padding-bottom: 5%;
+}
+.pad {
+  padding-top: 20px;
+}
+.favoritos {
+    margin-top: 5%;
+    padding: 1%;
+    background-color: #373737;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: .2em;
+    font-size: 13px;
+    margin: 1em;
+}
+.busqueda {
+    margin-top: 35%;
+    border: none;
+    border-bottom: solid;
+    border-width: thin;
+    padding-bottom: 5px;
+    width: 100%;
+}
+::-webkit-input-placeholder {
+    color: #F3954D;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.logo-xs {
+  padding-top: .5em;
+}
+.menu {
+    margin-top: 100%;
+}
+.carousel {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.datos {
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+}
+.imagenes {
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    display: inline-block;
+}
+.imagenes-xs {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.imagen {
+    width: 325px;
+    height: 325px;
+}
+label {
+    min-width: 325px;
+    text-align: center;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:normal;
+    color: white;
+    position: absolute;
+    display: block;
+}
+div.imagenes:hover {
+    box-shadow: 10px 10px;
+    color: #F3954D;
+}
+div.imagenes:hover label {
+    color: #F3954D;
+}
+div.imagenes-xs:hover {
+    box-shadow: 10px 10px;
+    color: #F3954D;
+}
+div.imagenes-xs:hover label {
+    color: #F3954D;
+}
+.vertical-line {
+    margin-top: 100%;
+    margin-left: 110%;
+    border-left: 1px solid gray;
+    height: 340px;
+}
+footer {
+    background-color: #F3954D;
+}
+ul {
+    list-style-type: none;
+    color: black;
+}
+li {
+    margin: 0 0 10px 0;
+}
+.guion {
+    color: #F3954D;
+}
+.facebook {
+    width: 10%;
+    height: 10%;
+    margin-left: 25%;
+}
+.facebook-mini {
+    width: 5%;
+    height: 5%;
+    margin-left: 5%;
+}
+a {
+    color: inherit !important;
+}
+a:hover {
+    color: #F3954D !important;
+    text-decoration: none !important;
+}
+
+/*
+  sidebar
+*/
+
+
+/* Creates a vertical nav starting at 768px (sm) */
+
+@media (min-width: 100%) {
+    .bootstrap-vertical-nav .navbar .navbar-collapse {
+        padding: 0;
+        max-height: none;
+    }
+    .bootstrap-vertical-nav .navbar ul {
+        float: none;
+    }
+    .bootstrap-vertical-nav .navbar ul:not {
+        display: block;
+    }
+    .bootstrap-vertical-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .bootstrap-vertical-nav .navbar-nav .nav-item+.nav-item {
+        margin-left: 0;
+    }
+}
+
+/* Put any custom CSS you want for your menu when it is collapsed */
+
+@media (max-width: 100%) {
+    .bootstrap-vertical-nav {
+    }
+}
+
+.nav {
+  margin-top: 2em !important;
+}
+
+.nav-item {
+  padding-top: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.navbar-toggler {
+  display: inline;
+  margin-top: 0;
+  margin-left: 1em;
+}
+.busqueda-hidden {
+  border: none;
+  border-bottom: solid;
+  border-width: thin;
+  width:80%;
+  display: inline;
+}
+.rama {
+  text-align: center;
+  color: #F3954D;
+  padding-top: .8em;
+}

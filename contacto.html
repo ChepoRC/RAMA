@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/contacto.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBpDMTyW2d_pH20gtmchJkuxDimRr8vijI"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+
+        <!-- Bootstrap Vertical Nav -->
+        <link rel="stylesheet" href="css/bootstrap-vertical-menu.css">
+
+        <script>
+            function initialize() {
+                var myOptions = {
+                    scrollwheel: false,
+                    zoom: 14,
+                    center: new google.maps.LatLng(19.0603777, -98.3024632),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    styles: [
+                        {
+                            featureType: 'all',
+                            stylers: [
+                                {
+                                    saturation: -100
+                                }, {
+                                    gamma: 0.50
+                                }
+                            ]
+                        }
+                    ]
+                };
+
+                map = new google.maps.Map(document.getElementById("googleMap"), myOptions);
+                var marker = new google.maps.Marker({
+                    map: map,
+                    icon: {
+                        url: "pin.svg",
+                        scaledSize: new google.maps.Size(55, 80)
+                    },
+                    position: new google.maps.LatLng(19.0603777, -98.3024632)
+                });
+
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+    </head>
+    <body>
+        <div class="fondo">
+            <div class="box">
+                <div class="row">
+                  <div class="col-xs-3 hidden-md hidden-sm hidden-lg logo-xs">
+                      <a href="index.html"><img src="Logo.svg" class="logo"></a>
+                  </div>
+
+                  <div class="col-xs-6 hidden-md hidden-sm hidden-lg">
+                      <p class="rama">Creaciones Rama</p>
+                  </div>
+
+              <div class="col-md-2">
+
+                  <div class="bootstrap-vertical-nav">
+
+                      <nav class="navbar navbar-light">
+
+                          <a class="navbar-brand hidden-xs" href="index.html"><img src="Logo.svg" class="img-responsive logo"></a>
+                          <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                              ☰
+                          </button>
+                          <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+                              <ul class="nav navbar-nav">
+                                  <a class="nav-link" href="#">
+                                      <span class="sr-only">(current)</span>
+                                  </a>
+                                  <li class="nav-item">
+                                  <li class="nav-item">
+                                      <input type="text" class="busqueda-hidden hidden-md-up" placeholder="BUSCAR">
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">
+                                          <span class="guion">__
+                                          </span>Salas</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu">
+                                          <span class="guion">__
+                                          </span>Sillas</a>
+                                      <ul class="nav-stacked collapse left-submenu" id="item1">
+                                          <li>
+                                              <a href="sillas.html">Categoria 01</a>
+                                          </li>
+                                          <li>
+                                              <a href="sillas.html">Categoria 02</a>
+                                          </li>
+                                          <li>
+                                              <a href="sillas.html">Categoria 03</a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="promociones.html">
+                                          <span class="guion">__
+                                          </span>Promociones</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">
+                                          <span class="guion">__
+                                          </span>Especiales</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="contacto.html">
+                                          <span class="guion">__
+                                          </span>Contacto</a>
+                                  </li>
+                              </li>
+                              <a href="#" class="hidden-md hidden-lg hidden-sm"><img src="imagenes/f.png" class="facebook-mini"/></a>
+                              <a href="#" class="hidden-xs"><img src="imagenes/f.png" class="facebook"/></a>
+
+                          </ul>
+                      </div>
+                  </nav>
+
+              </div>
+          </div>
+
+                <div class="col-md-8">
+
+                    <div class="row">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3">
+                            <input type="text" class="busqueda hidden-xs" placeholder="BUSCAR">
+                        </div>
+                    </div>
+
+                    <div class="row pad">
+                      <div class="col-xs-12">
+                          <div id="googleMap"></div>
+                      </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2">
+                    <p class="favoritos">Favoritos :
+                        <a href="favoritos.html">0</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <footer class="row">
+            <div class="col-md-12">
+                <p class="datos">Creaciones Rama S.A. de C.V.
+                    <br>
+                    Reforma #332 Col. Los Ranchos, Chipilo, Puebla. CP 74325.
+                    <br>
+                    Tel. (222) 283-1294
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

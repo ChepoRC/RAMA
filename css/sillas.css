@@ -1,0 +1,62 @@
+.sillas-logo {
+    margin-top: 3%;
+    margin-left: 46%;
+    width: 80px;
+    height: 80px;
+}
+.sillas-logo-xs {
+    margin-top: 3%;
+    margin-left: 40%;
+    width: 80px;
+    height: 80px;
+}
+.categoria {
+    color: #F3954D;
+    margin-top: 2%;
+}
+.sillas {
+    margin-top: 3%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10%;
+}
+.sillas-xs {
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10%;
+}
+.wp-caption img {
+    display: block;
+}
+.wp-caption {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.texto {
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-align: center;
+    padding-top: 45%;
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+.wp-caption:hover .texto {
+    opacity: 1;
+    border: solid #F3954D;
+    cursor: pointer;
+}
+ul.active {
+    display: block;
+}
